@@ -23,7 +23,7 @@ namespace TaskManager_Kilunina.View
         public Main(object Context)
         {
             InitializeComponent();
-            DataContext = Context; 
+            DataContext = Context;
         }
     }
 }
