@@ -70,7 +70,7 @@
                     <DropShadowEffect Opacity="0.5" BlurRadius="3" ShadowDepth="3"/>
                 </Button.Effect>
             </Button>
-            <Button Style="{StaticResource Delete}" IsEnabled="{Binding IsEnable}" Command="{Binding OnDelete}" Content="Удалить" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,160,0" Grid.Column="1">
+            <Button Style="{StaticResource Delete}" IsEnabled="{Binding IsEnable}" Command="{Binding OnDelete}" Content="Удалить" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,160,10" Grid.Column="1">
                 <Button.Effect>
                     <DropShadowEffect Opacity="0.5" BlurRadius="3" ShadowDepth="3"/>
                 </Button.Effect>
