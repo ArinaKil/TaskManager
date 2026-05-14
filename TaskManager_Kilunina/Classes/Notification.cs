@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace TaskManager_Kilunina.Classes
 {
-    public class Notification : INotifyPropertyChanging
+    public class Notification : INotifyPropertyChanged
     {
-        public event PropertyChangingEventHandler PropertyChanging;
+        public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {
-            if(PropertyChanging != null)
-                PropertyChanging(this, new PropertyChangingEventArgs(prop));
+            if(PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

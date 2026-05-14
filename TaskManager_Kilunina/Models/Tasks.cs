@@ -50,7 +50,7 @@ namespace TaskManager_Kilunina.Models
             get { return dateExecute; }
             set
             {
-                if (value.Date < DateTime.Now)
+                if (value.Date < DateTime.Now.Date)
                     MessageBox.Show("Дата выполнение не может быть меньше текущей", "Не коректный ввод значения");
                 else
                 {

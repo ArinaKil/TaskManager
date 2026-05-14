@@ -13,7 +13,7 @@ namespace TaskManager_Kilunina.ViewModels
     public class VM_Tasks : Notification
     {
         public ObservableCollection<Tasks> Tasks { get; set; }
-        public TasksContext tasksContext;
+        public TasksContext tasksContext = new TasksContext();
 
         public VM_Tasks() =>
             Tasks = new ObservableCollection<Tasks>(tasksContext.Tasks.OrderBy(x => x.Done));

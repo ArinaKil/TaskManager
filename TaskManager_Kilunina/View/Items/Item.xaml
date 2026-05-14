@@ -60,7 +60,7 @@
                 <Label Content="Комментарий:" VerticalAlignment="Top" Margin="10, 0, 10, 0"/>
                 <TextBox Text="{Binding Comment}" IsEnabled="{Binding IsEnable}" VerticalContentAlignment="Center" Margin="10,25,10,0" Height="25"/>
             </Grid>
-            <Button Style="{StaticResource Update}" IsEnabled="{Binding IsEnable}" Command="{Binding OnExit}" Content="{Binding IsEnableText}" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,10,0" Grid.Column="1">
+            <Button Style="{StaticResource Update}" IsEnabled="{Binding IsEnable}" Command="{Binding OnEdit}" Content="{Binding IsEnableText}" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,10,0" Grid.Column="1">
                 <Button.Effect>
                     <DropShadowEffect Opacity="0.5" BlurRadius="3" ShadowDepth="3"/>
                 </Button.Effect>
